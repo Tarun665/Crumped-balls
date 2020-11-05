@@ -21,9 +21,24 @@ class Ball{
         if (keyDown("left")||keyDown("A")) {
             Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:-0.001,y:0});
         }
-        if (keyDown("up")||keyDown("W")) {
+        if (keyDown("W")) {
             Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0,y:-0.005});
         }
+        if (keyDown("1")) {
+            Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0,y:-0.005});
+        }
+        if (keyDown("up")) {
+            Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0.001,y:-0.005});
+        }
+        // if (keyWentUp("up")) {
+        //     Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0,y:0});
+        // }
+        // function keyPressed(){
+        //     if(keyCode === UP_ARROW){
+        //         Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0.005,y:-0.005});
+
+        //     }
+        // }
         if (keyDown("down")||keyDown("S")) {
             Matter.Body.applyForce(this.body,{x:this.body.position.x,y:this.body.position.y}, {x:0,y:0.005});
         }
